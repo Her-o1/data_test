@@ -41,6 +41,3 @@ def predict(genre, test_feat):
     uris = genre_data.iloc[n_neighbors]["uri"].tolist()
     audios = genre_data.iloc[n_neighbors][audio_feats].to_numpy()
     return {'uris': uris }
-
-if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=8000)
