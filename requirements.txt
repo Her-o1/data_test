@@ -1,5 +1,5 @@
 fastapi
 scikit-learn
 pandas
-sqlalchemy
-pymysql
+uvicorn
+gunicorn
